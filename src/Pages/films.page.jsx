@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export function FilmsPage(props) {
+function FilmsPage(props) {
 let [list, setList] = useState([])
 
   function getFilms() {
@@ -26,4 +26,5 @@ useEffect(() => {
     );
 }
 
+export default FilmsPage;
 

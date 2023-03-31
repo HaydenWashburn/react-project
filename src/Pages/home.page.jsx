@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-export function HomePage(props) {
+function HomePage(props) {
   let [list, setList] = useState(["ready", "set", "go"]);
   let [text, setText] = useState("");
 
@@ -37,4 +37,5 @@ export function HomePage(props) {
     );
   }
 
+  export default HomePage;
 

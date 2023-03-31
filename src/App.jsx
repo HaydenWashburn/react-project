@@ -1,19 +1,25 @@
-import { useState } from "react";
 import "./App.css";
-import FilmsList from "./components/filmsList";
 import {BrowserRouter, NavLink, Routes, Route} from 'react-router-dom';
-import HomePage from './Pages/';
-import FilmsPage from './Pages/index'
+import { HomePage, FilmsPage } from './Pages/';
+
+
 function App(props) {
+  
   return (
     <BrowserRouter>
+    <nav>
+      <ul>
+        <li>
+          <NavLink to="/">Home</NavLink>
+          </li>
+        <li>
+          <NavLink to="/films">Films</NavLink>
+          </li>
+      </ul>
+    </nav>
     <Routes>
-      <Route path = "/">
- 
-      </Route>
-      <Route>
- 
-          </Route>
+      <Route path = "/" element = {<HomePage />} />
+      <Route path = "/films" element = {<FilmsPage />} />
     </Routes>
     </BrowserRouter>
   )
