@@ -29,7 +29,7 @@ export function getFilmStats(list) {
     }
   });
 console.log(avg_score, acc_score, total, latestFilm)
-  return avg_score, acc_score, total, latestFilm;
+  return { avg_score, acc_score, total, latestFilm };
 }
 
 // export function getListOf(list, prop) {
